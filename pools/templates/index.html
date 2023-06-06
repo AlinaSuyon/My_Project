@@ -1,0 +1,70 @@
+{% extends 'template.html' %}
+{% block body %}
+<div class="content">
+
+    <h1> <span> Добро пожаловать </span> </h1>
+    <p>  Добро пожаловать на сайт автора комикса! Я рисую комиксы уже много лет на графическом планшете и создаю
+        уникальные миры с их живописными персонажами. Мои комиксы всегда популярны среди людей всех возрастов, и теперь
+        вы можете приобрести их в книжном переплете на этом сайте! <p>
+
+         У меня имеются комиксы во всех жанрах, от приключенческих и фантастических до комедийных и романтических. Я
+        предлагаю оригинальные истории, затягивающие сюжеты, много диалогов и красочные иллюстрации, все это в печатном
+        варианте. Каждый комикс - <span> это результат моего труда и любви к искусству </span>, поэтому приобретая его,
+        вы приобретаете не только книгу, но и индивидуальный подход к каждому произведению. <p>
+
+        Я искренне надеюсь, что вам понравятся мои комиксы, и вы найдете историю, которая увлечет вас. Не забудьте также
+        посетить мой блог, где я делюсь своими мыслями, арт-работами и вдохновением ᕙ(`▿´)ᕗ <p>
+
+        Спасибо, что посетили мой сайт, и я надеюсь, что вы найдете здесь что-то особенное! </p>
+
+    <img src="../static/pools/img/textfon.png">
+</div>
+<style>
+
+    .content {
+
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 110%;
+        letter-spacing: 0.16em;
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        flex-direction: column;
+        margin: 100px auto;
+
+    }
+
+    span {
+        font-weight: bold;
+        font-style: italic;
+        color: #e37dad;
+    }
+
+    .content img {
+        position: absolute;
+        top: 20%;
+        left: 27%;
+        opacity: 0.8;
+        z-index: -1;
+        width: 700px;
+        height: 500px;
+
+    }
+    body {
+        background-image: url('../static/pools/img/background-image.jpg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+</html>
+{% endblock %}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Главная страница</title>
+</head>
+
+<header>
+    <div class="logo">
+        <a>
+            <img src="../static/pools/img/logo.png" width="60px" height="60px"/>
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/about">Продукция</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+            <li><a href="/hobbies">Блог</a></li>
+            <li><a href="/gallery">Галерея</a></li>
+        </ul>
+    </div>
+    <div class="tel">
+        <a href="tel:+79183522861">+7 (918) 352 28 61</a>
+    </div>
+</header>
+<body>
+{% block body %}
+{% endblock %}
+</body>
+
+
+
+
+CSS:
+
+
+<style>
+    header {
+        background: #d9baa9;
+    }
+
+    .body.content {
+        background-color: bisque;
+        height: 100%;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu {
+        flex-grow: 1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu li:last-child {
+        margin-right: 0;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+    }
+
+    .menu .active {
+        color: #fff;
+        background: black;
+        border-radius: 8px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+        text-transform: uppercase;
+        letter-spacing: .27em;
+    }
+
+    .menu a {
+        color: #ffffff;
+        text-dicoration: none;
+    }
+
+    .tel {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .tel a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+</style>
+
+</html>
