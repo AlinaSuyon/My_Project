@@ -7,7 +7,7 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("My name is Alina")
+    return render(request, 'interests.html',{})
 
 
 def contacts(request):
@@ -22,3 +22,5 @@ def gallery(request):
     return HttpResponse("My name is Alina")
 
 
+def main(request):
+    return render(request, 'index.html', {})

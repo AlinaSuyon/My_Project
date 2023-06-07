@@ -15,28 +15,35 @@
         <ul>
             <li><a href="/about">Продукция</a></li>
             <li><a href="/contacts">Контакты</a></li>
+            <li><a href="/main">Главная страница</a></li>
             <li><a href="/hobbies">Блог</a></li>
             <li><a href="/gallery">Галерея</a></li>
+
         </ul>
     </div>
     <div class="tel">
         <a href="tel:+79183522861">+7 (918) 352 28 61</a>
     </div>
 </header>
+
+<footer>
+    <div class="container">
+        <p> Некоторые картинки защищены авторским правом. Все претензии принимаются в мордобое по адресу г. Москва,
+            ул. Пушкина, д. 1 </p>
+    </div>
+</footer>
+
 <body>
 {% block body %}
 {% endblock %}
 </body>
 
-
-
-
-CSS:
+</html>
 
 
 <style>
     header {
-        background: #d9baa9;
+        background-color: #e1a5a5;
     }
 
     .body.content {
@@ -58,6 +65,8 @@ CSS:
 
     .menu ul {
         display: flex;
+        justify-content: center;
+        text-align: center;
         flex-flow: row nowrap;
         margin: 0;
         padding: 0;
@@ -65,7 +74,7 @@ CSS:
     }
 
     .menu li {
-        margin-right: 20px;
+        margin-right: 50px;
     }
 
     .menu li:last-child {
@@ -109,6 +118,7 @@ CSS:
         letter-spacing: .27em;
     }
 
+
     .menu a {
         color: #ffffff;
         text-dicoration: none;
@@ -126,6 +136,21 @@ CSS:
 
 
 
+    footer {
+        opacity: 0.6;
+        position: fixed;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+        bottom: 0px;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        transition: bottom 0.3s ease-in-out;
+    }
+
+
+
+
 </style>
 
-</html>

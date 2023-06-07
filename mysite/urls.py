@@ -25,4 +25,5 @@ urlpatterns = [
     path('contacts/', index.contacts),
     path('hobbies/', index.hobbies),
     path('gallery/', index.gallery),
+    path('main/', index.main),
 ]
